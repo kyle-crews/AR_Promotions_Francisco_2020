@@ -35,6 +35,7 @@ class MapViewController: UIViewController {
     super.viewDidLoad()
     
     mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
+    setupLocations()
   }
     
     func setupLocations() {
@@ -46,6 +47,11 @@ class MapViewController: UIViewController {
         
       let thirdTarget = ARItem(itemDescription: "dragon", location: CLLocation(latitude: 30.260717, longitude: 97.704044))
       targets.append(thirdTarget)
+    
+        for item in targets {
+          let annotation = MapAnnotation(location: item.location.coordinate, item: item)
+          self.mapView.addAnnotation(annotation)
+        }
     }
 
 }
