@@ -36,4 +36,16 @@ class MapViewController: UIViewController {
     
     mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
   }
+    
+    func setupLocations() {
+      let firstTarget = ARItem(itemDescription: "wolf", location: CLLocation(latitude: 0, longitude: 0))
+      targets.append(firstTarget)
+        
+      let secondTarget = ARItem(itemDescription: "wolf", location: CLLocation(latitude: 0, longitude: 0))
+      targets.append(secondTarget)
+        
+      let thirdTarget = ARItem(itemDescription: "dragon", location: CLLocation(latitude: 0, longitude: 0))
+      targets.append(thirdTarget)
+    }
+
 }
