@@ -38,13 +38,13 @@ class MapViewController: UIViewController {
   }
     
     func setupLocations() {
-      let firstTarget = ARItem(itemDescription: "wolf", location: CLLocation(latitude: 0, longitude: 0))
+      let firstTarget = ARItem(itemDescription: "wolf", location: CLLocation(latitude: 30.258780, longitude: -97.705180))
       targets.append(firstTarget)
         
-      let secondTarget = ARItem(itemDescription: "wolf", location: CLLocation(latitude: 0, longitude: 0))
+      let secondTarget = ARItem(itemDescription: "wolf", location: CLLocation(latitude: 30.268560, longitude: -97.742850))
       targets.append(secondTarget)
         
-      let thirdTarget = ARItem(itemDescription: "dragon", location: CLLocation(latitude: 0, longitude: 0))
+      let thirdTarget = ARItem(itemDescription: "dragon", location: CLLocation(latitude: 30.260717, longitude: 97.704044))
       targets.append(thirdTarget)
     }
 
