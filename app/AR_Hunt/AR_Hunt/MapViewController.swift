@@ -22,6 +22,9 @@
 
 import UIKit
 import MapKit
+import CoreLocation
+
+var targets = [ARItem]()
 
 
 class MapViewController: UIViewController {
